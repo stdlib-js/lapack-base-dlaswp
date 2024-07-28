@@ -40,7 +40,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dlaswp from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-dlaswp@deno/mod.js';
+var dlaswp = require( '@stdlib/lapack-base-dlaswp' );
 ```
 
 #### dlaswp( N, A, LDA, k1, k2, IPIV, incx )
@@ -48,8 +48,8 @@ import dlaswp from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-dlaswp@den
 Perform a series of row interchanges on an input matrix `A` using pivot indices stored in `IPIV`.
 
 ```javascript
-import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+var Int32Array = require( '@stdlib/array-int32' );
+var Float64Array = require( '@stdlib/array-float64' );
 
 var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 var IPIV = new Int32Array( [ 2, 0, 1 ] );
@@ -72,8 +72,8 @@ The function has the following parameters:
 The sign of the increment parameter `incx` determines the order in which pivots are applied. For example, to apply pivots in reverse order,
 
 ```javascript
-import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+var Int32Array = require( '@stdlib/array-int32' );
+var Float64Array = require( '@stdlib/array-float64' );
 
 var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 var IPIV = new Int32Array( [ 2, 0, 1 ] );
@@ -85,8 +85,8 @@ dlaswp( 'row-major', 2, A, 2, 0, 2, IPIV, -1 );
 To perform strided access over `IPIV`, provide an `abs(incx)` value greater than one. For example, to access every other element in `IPIV`,
 
 ```javascript
-import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+var Int32Array = require( '@stdlib/array-int32' );
+var Float64Array = require( '@stdlib/array-float64' );
 
 var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 var IPIV = new Int32Array( [ 2, 999, 0, 999, 1 ] );
@@ -100,8 +100,8 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 <!-- eslint-disable stdlib/capitalized-comments -->
 
 ```javascript
-import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+var Int32Array = require( '@stdlib/array-int32' );
+var Float64Array = require( '@stdlib/array-float64' );
 
 // Initial arrays...
 var A0 = new Float64Array( [ 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
@@ -120,8 +120,8 @@ dlaswp( 'row-major', 2, A1, 2, 0, 2, IPIV1, 1 );
 Performs a series of row interchanges on the matrix `A` using pivot indices stored in `IPIV` and alternative indexing semantics.
 
 ```javascript
-import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+var Int32Array = require( '@stdlib/array-int32' );
+var Float64Array = require( '@stdlib/array-float64' );
 
 var A = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] ); // => [ [ 1.0, 2.0 ], [ 3.0, 4.0 ], [ 5.0, 6.0 ] ]
 var IPIV = new Int32Array( [ 2, 0, 1 ] );
@@ -149,8 +149,8 @@ While [`typed array`][mdn-typed-array] views mandate a view offset based on the 
 <!-- eslint-disable max-len -->
 
 ```javascript
-import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+var Int32Array = require( '@stdlib/array-int32' );
+var Float64Array = require( '@stdlib/array-float64' );
 
 var A = new Float64Array( [ 0.0, 0.0, 0.0, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var IPIV = new Int32Array( [ 0, 0, 2, 0, 1 ] );
@@ -169,7 +169,7 @@ dlaswp.ndarray( 2, A, 2, 1, 4, 0, 2, 1, IPIV, 1, 2 );
 
 -   Both functions access `k2-k1+1` elements from `IPIV`.
 -   While `dlaswp` conflates the order in which pivots are applied with the order in which elements in `IPIV` are accessed, the `ndarray` method delineates control of those behaviors with separate parameters `inck` and `si`.
--   `dlaswp()` corresponds to the [LAPACK][LAPACK] level 1 function [`dlaswp`][dlaswp].
+-   `dlaswp()` corresponds to the [LAPACK][LAPACK] level 1 function [`dlaswp`][lapack-dlaswp].
 
 </section>
 
@@ -182,10 +182,10 @@ dlaswp.ndarray( 2, A, 2, 1, 4, 0, 2, 1, IPIV, 1, 2 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-to-array@deno/mod.js';
-import dlaswp from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-dlaswp@deno/mod.js';
+var Float64Array = require( '@stdlib/array-float64' );
+var Int32Array = require( '@stdlib/array-int32' );
+var ndarray2array = require( '@stdlib/ndarray-base-to-array' );
+var dlaswp = require( '@stdlib/lapack-base-dlaswp' );
 
 // Specify matrix meta data:
 var shape = [ 4, 2 ];
@@ -211,7 +211,93 @@ console.log( ndarray2array( A, shape, strides, offset, order ) );
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="installation">
+
+## Installation
+
+```bash
+npm install @stdlib/lapack-base-dlaswp
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
+
+<section class="usage">
+
+### Usage
+
+```c
+TODO
+```
+
+#### TODO
+
+TODO.
+
+```c
+TODO
+```
+
+TODO
+
+```c
+TODO
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+TODO
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -230,7 +316,7 @@ console.log( ndarray2array( A, shape, strides, offset, order ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -295,7 +381,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [lapack]: https://www.netlib.org/lapack/explore-html/
 
-[dlaswp]: https://www.netlib.org/lapack/explore-html/d7/d6b/dlaswp_8f_source.html
+[lapack-dlaswp]: https://www.netlib.org/lapack/explore-html/d7/d6b/dlaswp_8f_source.html
 
 [mdn-float64array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array
 
