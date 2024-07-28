@@ -169,7 +169,7 @@ dlaswp.ndarray( 2, A, 2, 1, 4, 0, 2, 1, IPIV, 1, 2 );
 
 -   Both functions access `k2-k1+1` elements from `IPIV`.
 -   While `dlaswp` conflates the order in which pivots are applied with the order in which elements in `IPIV` are accessed, the `ndarray` method delineates control of those behaviors with separate parameters `inck` and `si`.
--   `dlaswp()` corresponds to the [LAPACK][LAPACK] level 1 function [`dlaswp`][dlaswp].
+-   `dlaswp()` corresponds to the [LAPACK][LAPACK] level 1 function [`dlaswp`][lapack-dlaswp].
 
 </section>
 
@@ -381,7 +381,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [lapack]: https://www.netlib.org/lapack/explore-html/
 
-[dlaswp]: https://www.netlib.org/lapack/explore-html/d7/d6b/dlaswp_8f_source.html
+[lapack-dlaswp]: https://www.netlib.org/lapack/explore-html/d7/d6b/dlaswp_8f_source.html
 
 [mdn-float64array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array
 

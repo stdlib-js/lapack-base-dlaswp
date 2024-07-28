@@ -37,6 +37,7 @@
 
 <details>
 
+-   [`04b258f`](https://github.com/stdlib-js/stdlib/commit/04b258f50b436e95832b6d6d4d892cee5aa36ed3) - **docs:** update definition _(by Athan Reines)_
 -   [`d61d3f5`](https://github.com/stdlib-js/stdlib/commit/d61d3f5ad8faab321a3ac0159f9b04f6aca4a2bd) - **docs:** fix comments _(by Athan Reines)_
 -   [`812e033`](https://github.com/stdlib-js/stdlib/commit/812e0334a74ea13f3e0bf0e3ed3453c1933f8d43) - **feat:** remove `order` argument from `ndarray` method _(by Athan Reines)_
 -   [`f2dfdb3`](https://github.com/stdlib-js/stdlib/commit/f2dfdb389aadc142ce36367e92e5492b082eef0a) - **feat:** add `lapack/base/dlaswp` [(#2483)](https://github.com/stdlib-js/stdlib/pull/2483) _(by Pranav Goswami, Athan Reines)_
