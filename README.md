@@ -40,7 +40,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dlaswp from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-dlaswp@esm/index.mjs';
+import dlaswp from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-dlaswp@v0.1.0-esm/index.mjs';
 ```
 
 #### dlaswp( N, A, LDA, k1, k2, IPIV, incx )
@@ -190,7 +190,7 @@ dlaswp.ndarray( 2, A, 2, 1, 4, 0, 2, 1, IPIV, 1, 2 );
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
 import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@esm/index.mjs';
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-to-array@esm/index.mjs';
-import dlaswp from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-dlaswp@esm/index.mjs';
+import dlaswp from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-dlaswp@v0.1.0-esm/index.mjs';
 
 // Specify matrix meta data:
 var shape = [ 4, 2 ];
