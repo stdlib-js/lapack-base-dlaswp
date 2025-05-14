@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-01-13)
+## Unreleased (2025-05-14)
 
 <section class="features">
 
@@ -22,6 +22,8 @@
 
 <details>
 
+-   [`9ab33f7`](https://github.com/stdlib-js/stdlib/commit/9ab33f74cb00123d6b48bc8b2a9f88ec559b82aa) - **docs:** update copy _(by Athan Reines)_
+-   [`41a3836`](https://github.com/stdlib-js/stdlib/commit/41a383613580ba43656bad45f30e1b06aa0d14b9) - **refactor:** use base assertion utility _(by Athan Reines)_
 -   [`e0cef99`](https://github.com/stdlib-js/stdlib/commit/e0cef995e884021db3001dc1a3cfef0ca7b368c2) - **style:** remove extra spaces for regular expressions in publish script _(by Philipp Burckhardt)_
 -   [`3646d49`](https://github.com/stdlib-js/stdlib/commit/3646d490449e83e4db4130b6a16544674550f5c7) - **feat:** add `lapack/base/slaswp` [(#2757)](https://github.com/stdlib-js/stdlib/pull/2757) _(by Pranav Goswami, Athan Reines)_
 
