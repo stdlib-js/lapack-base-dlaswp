@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-14)
+## Unreleased (2026-01-05)
 
 <section class="features">
 
@@ -16,12 +16,25 @@
 
 <!-- /.features -->
 
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#9527](https://github.com/stdlib-js/stdlib/issues/9527)
+
+</section>
+
+<!-- /.issues -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`4bb46e9`](https://github.com/stdlib-js/stdlib/commit/4bb46e9a4f4421fd250ac065aba2fd7ca8dfa5da) - **chore:** fix JavaScript lint errors [(#9530)](https://github.com/stdlib-js/stdlib/pull/9530) _(by kaushal-kumar-it, Athan Reines)_
 -   [`9ab33f7`](https://github.com/stdlib-js/stdlib/commit/9ab33f74cb00123d6b48bc8b2a9f88ec559b82aa) - **docs:** update copy _(by Athan Reines)_
 -   [`41a3836`](https://github.com/stdlib-js/stdlib/commit/41a383613580ba43656bad45f30e1b06aa0d14b9) - **refactor:** use base assertion utility _(by Athan Reines)_
 -   [`e0cef99`](https://github.com/stdlib-js/stdlib/commit/e0cef995e884021db3001dc1a3cfef0ca7b368c2) - **style:** remove extra spaces for regular expressions in publish script _(by Philipp Burckhardt)_
@@ -37,11 +50,12 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Philipp Burckhardt
 -   Pranav Goswami
+-   kaushal-kumar-it
 
 </section>
 
