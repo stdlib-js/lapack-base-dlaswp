@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-05)
+## Unreleased (2026-01-18)
 
 <section class="features">
 
@@ -15,6 +15,16 @@
 </section>
 
 <!-- /.features -->
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`5b1c0fd`](https://github.com/stdlib-js/stdlib/commit/5b1c0fd3f21b52b9cf1a791ab74367a08e79b2c8) - add missing exports comments
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="issues">
 
@@ -34,6 +44,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`5b1c0fd`](https://github.com/stdlib-js/stdlib/commit/5b1c0fd3f21b52b9cf1a791ab74367a08e79b2c8) - **fix:** add missing exports comments _(by Philipp Burckhardt)_
 -   [`4bb46e9`](https://github.com/stdlib-js/stdlib/commit/4bb46e9a4f4421fd250ac065aba2fd7ca8dfa5da) - **chore:** fix JavaScript lint errors [(#9530)](https://github.com/stdlib-js/stdlib/pull/9530) _(by kaushal-kumar-it, Athan Reines)_
 -   [`9ab33f7`](https://github.com/stdlib-js/stdlib/commit/9ab33f74cb00123d6b48bc8b2a9f88ec559b82aa) - **docs:** update copy _(by Athan Reines)_
 -   [`41a3836`](https://github.com/stdlib-js/stdlib/commit/41a383613580ba43656bad45f30e1b06aa0d14b9) - **refactor:** use base assertion utility _(by Athan Reines)_
