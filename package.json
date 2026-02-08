@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/lapack-base-dlaswp",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Perform a series of row interchanges on an input matrix.",
   "license": "Apache-2.0",
   "author": {
@@ -37,31 +37,31 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-error": "^0.2.2",
+    "@stdlib/assert-is-error": "^0.2.3",
     "@stdlib/blas-base-assert-is-layout": "^0.0.2",
-    "@stdlib/blas-base-dswap": "^0.4.0",
-    "@stdlib/math-base-special-floor": "^0.2.3",
-    "@stdlib/math-base-special-max": "^0.3.0",
-    "@stdlib/ndarray-base-assert-is-column-major-string": "^0.1.0",
-    "@stdlib/ndarray-base-assert-is-row-major": "^0.2.2",
-    "@stdlib/ndarray-base-assert-is-row-major-string": "^0.1.0",
-    "@stdlib/string-format": "^0.2.2",
+    "@stdlib/blas-base-dswap": "^0.4.1",
+    "@stdlib/math-base-special-floor": "^0.2.4",
+    "@stdlib/math-base-special-max": "^0.3.1",
+    "@stdlib/ndarray-base-assert-is-column-major-string": "^0.1.1",
+    "@stdlib/ndarray-base-assert-is-row-major": "^0.2.3",
+    "@stdlib/ndarray-base-assert-is-row-major-string": "^0.1.1",
+    "@stdlib/string-format": "^0.2.3",
     "@stdlib/types": "^0.4.3",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
-    "@stdlib/utils-try-require": "^0.2.2",
-    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.3",
+    "@stdlib/utils-try-require": "^0.2.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/array-base-flatten": "^0.2.1",
     "@stdlib/array-base-reverse": "^0.2.2",
-    "@stdlib/array-float64": "^0.2.2",
-    "@stdlib/array-int32": "^0.2.2",
+    "@stdlib/array-float64": "^0.2.3",
+    "@stdlib/array-int32": "^0.2.3",
     "@stdlib/array-one-to": "^0.2.2",
-    "@stdlib/assert-is-browser": "^0.2.2",
-    "@stdlib/math-base-assert-is-nan": "^0.2.2",
-    "@stdlib/math-base-special-pow": "^0.3.0",
-    "@stdlib/ndarray-base-numel": "^0.2.2",
-    "@stdlib/ndarray-base-shape2strides": "^0.2.2",
+    "@stdlib/assert-is-browser": "^0.2.3",
+    "@stdlib/math-base-assert-is-nan": "^0.2.3",
+    "@stdlib/math-base-special-pow": "^0.3.1",
+    "@stdlib/ndarray-base-numel": "^0.2.3",
+    "@stdlib/ndarray-base-shape2strides": "^0.2.3",
     "@stdlib/ndarray-base-to-array": "^0.2.1",
     "@stdlib/random-array-discrete-uniform": "^0.2.1",
     "@stdlib/random-array-uniform": "^0.2.1",
@@ -69,7 +69,7 @@
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.2"
+    "@stdlib/bench-harness": "^0.2.3"
   },
   "engines": {
     "node": ">=0.10.0",
