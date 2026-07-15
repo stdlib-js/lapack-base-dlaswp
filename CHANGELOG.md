@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-24)
+## Unreleased (2026-07-15)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`199bb30`](https://github.com/stdlib-js/stdlib/commit/199bb30fd65e5ae83acd090f856fd0401edb8acb) - **docs:** update descriptions [(#13481)](https://github.com/stdlib-js/stdlib/pull/13481) _(by Philipp Burckhardt)_
 -   [`3172206`](https://github.com/stdlib-js/stdlib/commit/317220684f42b0b7c51373e65eb354e7d2be6fc7) - **bench:** fix description _(by Athan Reines)_
 -   [`401114d`](https://github.com/stdlib-js/stdlib/commit/401114d47c349c8e1e5dd329b747fc0ec2614529) - **bench:** refactor to use string interpolation in `lapack/base/dlaswp` [(#10102)](https://github.com/stdlib-js/stdlib/pull/10102) _(by Prajjwal Bajpai, Athan Reines)_
 
@@ -25,9 +26,10 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Philipp Burckhardt
 -   Prajjwal Bajpai
 
 </section>
